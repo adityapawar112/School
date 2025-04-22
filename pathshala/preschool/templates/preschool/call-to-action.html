@@ -1,4 +1,8 @@
+{% extends 'preschool/base.html' %}
+{% load static %}
 
+
+{% block content %}
 
 
         <!-- Page Header End -->
@@ -24,7 +28,7 @@
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/call-to-action.jpg" style="object-fit: cover;">
+                                <img class="position-absolute w-100 h-100 rounded" src="{% static 'preschool/img/call-to-action.jpg' %}" style="object-fit: cover;">
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -42,5 +46,5 @@
         </div>
         <!-- Call To Action End -->
 
-
+{% endblock content %}
        

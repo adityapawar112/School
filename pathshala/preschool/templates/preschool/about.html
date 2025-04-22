@@ -1,4 +1,8 @@
+{% extends 'preschool/base.html' %}
+{% load static %}
 
+
+{% block content %}
 
 
         <!-- Page Header End -->
@@ -31,7 +35,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
+                                    <img class="rounded-circle flex-shrink-0" src="{% static 'preschool/img/user.jpg' %}" alt="" style="width: 45px; height: 45px;">
                                     <div class="ms-3">
                                         <h6 class="text-primary mb-1">Jhon Doe</h6>
                                         <small>CEO & Founder</small>
@@ -43,13 +47,13 @@
                     <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/about-1.jpg" alt="">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="{% static 'preschool/img/about-1.jpg' %}" alt="">
                             </div>
                             <div class="col-6 text-start" style="margin-top: -150px;">
-                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-2.jpg" alt="">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'preschool/img/about-2.jpg' %}" alt="">
                             </div>
                             <div class="col-6 text-end" style="margin-top: -150px;">
-                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-3.jpg" alt="">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="{% static 'preschool/img/about-3.jpg' %}" alt="">
                             </div>
                         </div>
                     </div>
@@ -66,7 +70,7 @@
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/call-to-action.jpg" style="object-fit: cover;">
+                                <img class="position-absolute w-100 h-100 rounded" src="{% static 'preschool/img/call-to-action.jpg' %}" style="object-fit: cover;">
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -96,7 +100,7 @@
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid rounded-circle w-75" src="{% static 'preschool/img/team-1.jpg' %}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -110,7 +114,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid rounded-circle w-75" src="{% static 'preschool/img/team-2.jpg' %}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -124,7 +128,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid rounded-circle w-75" src="{% static 'preschool/img/team-3.jpg' %}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -141,5 +145,5 @@
         </div>
         <!-- Team End -->
 
-
+        {% endblock content %}
         
